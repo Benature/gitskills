@@ -225,7 +225,7 @@ var end_interface = function(){
 //时钟道具特效
 var propsimage = new Image();
 var clock_on = false;
-propsimage.src ="../../../images/street-basketball-game-img/clock4.png";
+propsimage.src ="../../../../images/street-basketball-game-img/clock4.png";
 var prop_clock = function(){
     propstrigger = Math.ceil(Math.random() * 1000);
     //console.log(propstrigger);
@@ -335,7 +335,7 @@ var boardplace = function()
 
 //篮板碰撞
 var board_img = new Image();
-board_img.src = "../../../images/street-basketball-game-img/board2.png";
+board_img.src = "../../../../images/street-basketball-game-img/board2.png";
 
 var boardbasic = {x:-300, y:100, k:2/3,lr:-1};//篮板基点坐标及缩放系数k
 //篮板
@@ -351,7 +351,7 @@ var connerCollision = {c1:false , c2:false};
 var phi;//非对心碰撞角度(篮筐碰撞)
 
 var board_column = new Image();
-board_column.src = "../../../images/street-basketball-game-img/board_column.png";
+board_column.src = "../../../../images/street-basketball-game-img/board_column.png";
 var drawboard = function(){
 board.x=(boardbasic.x + 184*boardbasic.k)*boardbasic.lr;
 board.y=(boardbasic.y + 1*boardbasic.k);//左上角
@@ -516,13 +516,13 @@ var fake_board = function(){
 //----------------------------------------//
 //----------------------------------------//
 var ball_img = new Image();
-ball_img.src = "../../../images/street-basketball-game-img/ball2.png";
+ball_img.src = "../../../../images/street-basketball-game-img/ball2.png";
 var background = new Image();
-background.src = "../../../images/street-basketball-game-img/background.jpg";
+background.src = "../../../../images/street-basketball-game-img/background.jpg";
 var background_begin = new Image();
-background_begin.src = "../../../images/street-basketball-game-img/background_begin.jpg";
+background_begin.src = "../../../../images/street-basketball-game-img/background_begin.jpg";
 var background_over = new Image();
-background_over.src = "../../../images/street-basketball-game-img/background_over.jpg";
+background_over.src = "../../../../images/street-basketball-game-img/background_over.jpg";
 ball_img.onload = function () {
     //width = ball_img.width;
     //height = ball_img.height;
