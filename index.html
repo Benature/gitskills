@@ -270,7 +270,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://benature.github.io/muyi.github.io/muyi.github.io/2018/07/29/Street_Basketball_Game/">
+    <link itemprop="mainEntityOfPage" href="https://benature.github.io/muyi.github.io/muyi.github.io/2018/07/07/考试倒计时/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="贰班班委">
@@ -289,7 +289,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/muyi.github.io/2018/07/29/Street_Basketball_Game/" itemprop="url">街头篮球</a></h1>
+                <a class="post-title-link" href="/muyi.github.io/2018/07/07/考试倒计时/" itemprop="url">Untitled</a></h1>
         
 
         <div class="post-meta">
@@ -301,7 +301,206 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-29T19:11:12+08:00">2018-07-29</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-07T13:19:51+08:00">2018-07-07</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>物天考试倒计时</title>
+  <style type="text/css">
+    .container{
+      margin:0 auto;
+      width:800px;
+    }
+    #scene{
+      border:1px solid black;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <canvas id="myCanvas" width="800" height="600"></canvas>
+</div>
+<script type="text/javascript">
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+    context.font = "30px Arial";
+
+    
+
+function leftTimer(year,month,day,hour,minute,second,lock){ 
+    var leftTime = (new Date(year,month-1,day,hour,minute,second)) - (new Date()); //计算剩余的毫秒数 
+    var days = parseInt(leftTime / 1000 / 60 / 60 / 24 , 10); //计算剩余的天数 
+    var hours = parseInt(leftTime / 1000 / 60 / 60 % 24 , 10); //计算剩余的小时 
+    var minutes = parseInt(leftTime / 1000 / 60 % 60, 10);//计算剩余的分钟 
+    var seconds = parseInt(leftTime / 1000 % 60, 10);//计算剩余的秒数 
+    days = checkTime(days); 
+    hours = checkTime(hours); 
+    minutes = checkTime(minutes); 
+    seconds = checkTime(seconds); 
+    setInterval("leftTimer(2016,11,11,11,11,11)",1000); 
+    //document.getElementById("timer").innerHTML = days+"天" + hours+"小时" + minutes+"分"+seconds+"秒";  
+    if (lock == 1){
+        return days+"天"
+    }
+    else {
+        return days+"天" + hours+"时" + minutes+"分"+seconds+"秒";
+    }
+    } 
+function checkTime(i){ //将0-9的数字前面加上0，例1变为01 
+    if(i<10){ 
+        i = "0" + i; 
+    } 
+    return i; 
+} 
+
+window.onload = function () {
+    setInterval(function() {
+        context.clearRect(0, 0, 1200, 600);
+        context.fillStyle= "blue";
+        context.font = "50px Arial";
+        context.fillText( "物天考试倒计时",80,50);
+        context.fillStyle= "black";
+        context.font = "30px Arial";
+        context.fillText( "近代史纲要",20,100);
+        context.fillText( leftTimer(2018,7,14,9,30,0,0),220,100);
+        context.fillText( "  大学英语",20,150);
+        context.fillText( leftTimer(2018,7,16,9,30,0,1),220,150);
+        context.fillText( "     凉学",20,200);
+        context.fillText( leftTimer(2018,7,17,9,30,0,1),220,200);
+        context.fillText( "  误差分析",20,250);
+        //context.fillText( leftTimer(2018,7,17,9,30,0),220,100);
+    }, 1000);
+};
+</script>
+</body>
+</html>
+
+
+
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://benature.github.io/muyi.github.io/muyi.github.io/2018/07/03/Street_Basketball_Game/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="贰班班委">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/muyi.github.io/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="贰号文物堆">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/muyi.github.io/2018/07/03/Street_Basketball_Game/" itemprop="url">街头篮球</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-03T19:11:12+08:00">2018-07-03</time>
             
 
             
@@ -969,6 +1168,8 @@ img{
 
   
   
+    
+      
     
       
     
