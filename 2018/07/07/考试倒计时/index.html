@@ -46,19 +46,19 @@ function checkTime(i){ //将0-9的数字前面加上0，例1变为01
 window.onload = function () {
     setInterval(function() {
         context.clearRect(0, 0, 800, 600);
-        context.moveTo(200, 00);
+        context.moveTo(50, 20);
         //context.fillStyle= "blue";
         //context.font = "50px Arial";
         //context.fillText( "物天考试倒计时",80,50);
         context.fillStyle= "black";
         context.font = "20px Arial";
-        context.fillText( "近代史纲要",10,100);
-        context.fillText( leftTimer(2018,7,14,9,30,0,0),180,100);
-        context.fillText( "  大学英语",10,150);
-        context.fillText( leftTimer(2018,7,16,9,30,0,1),180,150);
-        context.fillText( "     凉学",10,200);
-        context.fillText( leftTimer(2018,7,17,9,30,0,1),180,200);
-        context.fillText( "  误差分析",10,250);
+        context.fillText( "近代史纲要",10,50);
+        context.fillText( leftTimer(2018,7,14,9,30,0,0),150,50);
+        context.fillText( "  大学英语",10,100);
+        context.fillText( leftTimer(2018,7,16,9,30,0,1),150,100);
+        context.fillText( "     凉学",10,250);
+        context.fillText( leftTimer(2018,7,17,9,30,0,1),150,250);
+        context.fillText( "  误差分析",10,300);
         //context.fillText( leftTimer(2018,7,17,9,30,0),220,100);
     }, 1000/10);
 };
