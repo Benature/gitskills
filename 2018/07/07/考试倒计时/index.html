@@ -1,22 +1,15 @@
+
 <!DOCTYPE html>
 <html>
 <head lang="en">
   <meta charset="UTF-8">
   <title>物天考试倒计时</title>
-  <style type="text/css">
-    .container{
-      margin:0 auto;
-      width:800px;
-    }
-    #scene{
-      border:1px solid black;
-    }
-  </style>
+
 </head>
 <body>
-<div class="container">
+
   <canvas id="myCanvas" width="800" height="600"></canvas>
-</div>
+
 <script type="text/javascript">
     var canvas = document.getElementById("myCanvas");
     var context = canvas.getContext("2d");
@@ -52,10 +45,11 @@ function checkTime(i){ //将0-9的数字前面加上0，例1变为01
 
 window.onload = function () {
     setInterval(function() {
-        context.clearRect(0, 0, 1200, 600);
-        context.fillStyle= "blue";
-        context.font = "50px Arial";
-        context.fillText( "物天考试倒计时",80,50);
+        context.clearRect(0, 0, 800, 600);
+        context.moveTo(200, 00);
+        //context.fillStyle= "blue";
+        //context.font = "50px Arial";
+        //context.fillText( "物天考试倒计时",80,50);
         context.fillStyle= "black";
         context.font = "30px Arial";
         context.fillText( "近代史纲要",20,100);
@@ -66,7 +60,7 @@ window.onload = function () {
         context.fillText( leftTimer(2018,7,17,9,30,0,1),220,200);
         context.fillText( "  误差分析",20,250);
         //context.fillText( leftTimer(2018,7,17,9,30,0),220,100);
-    }, 1000);
+    }, 1000/10);
 };
 </script>
 </body>
