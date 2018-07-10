@@ -7,14 +7,15 @@
 
 </head>
 <body>
-
+<a id="more"></a>
   <canvas id="myCanvas" width="800" height="600"></canvas>
 
 <script type="text/javascript">
     var canvas = document.getElementById("myCanvas");
     var context = canvas.getContext("2d");
     context.font = "30px Arial";
-
+    canvas.width = document.documentElement.clientWidth;
+    canvas.height = document.documentElement.clientHeight;
     
 
 function leftTimer(year,month,day,hour,minute,second,lock){ 
@@ -42,26 +43,41 @@ function checkTime(i){ //将0-9的数字前面加上0，例1变为01
     } 
     return i; 
 } 
-
+var col1=10,col2=160,col3=400;
+var line=150;
 window.onload = function () {
     setInterval(function() {
+        context.save();
+        context.translate((canvas.width-700)/2,Math.abs(canvas.height-400)/2);
         context.clearRect(0, 0, 800, 600);
-        //context.moveTo(50, 20);
+        //context.translate(50, 20);
         context.fillStyle= "blue";
         context.font = "40px Arial";
-        context.fillText( "物天考试倒计时",20,50);
+        context.fillText( "物天考试倒计时",120,50);
         context.font = "15px Arial";
-        context.fillText( "by 木一",320,60); 
+        context.fillText( "by 木一",420,60); 
+        context.fillStyle= "red";
+        context.font = "25px Arial";
+
+        context.fillText( "近代史纲要",col1,line);
+        context.fillText( leftTimer(2018,7,14,9,30,0,0),col2,line);
         context.fillStyle= "black";
-        context.font = "20px Arial";
-        context.fillText( "近代史纲要",10,150);
-        context.fillText( leftTimer(2018,7,14,9,30,0,0),140,150);
-        context.fillText( "  大学英语",10,200);
-        context.fillText( leftTimer(2018,7,16,9,30,0,1),140,200);
-        context.fillText( "     凉学",10,250);
-        context.fillText( leftTimer(2018,7,17,9,30,0,1),140,250);
-        context.fillText( "  误差分析",10,300);
-        //context.fillText( leftTimer(2018,7,17,9,30,0),220,100);
+        context.fillText( "C207(1-25) ; C303(rest)",col3,line);
+        line+=50;
+        context.fillStyle= "black";
+        context.fillText( "  大学英语",col1,line);
+        context.fillText( leftTimer(2018,7,16,9,30,0,0),col2,line);
+        context.fillText( "E301(A) ; F201(B) ; F301(C)",col3,line);
+        line+=50;
+        context.fillText( "     凉学",col1,line);
+        context.fillText( leftTimer(2018,7,17,9,30,0,0),col2,line);
+        context.fillText( "D307",col3,line);
+        line+=50;
+        context.fillText( "  误差分析",col1,line);
+        context.fillText( leftTimer(2018,7,17,3,00,0,0),col2,line);
+        context.fillText( "C303",col3,line);
+        line = 150;
+        context.restore();
     }, 1000/10);
 };
 </script>
