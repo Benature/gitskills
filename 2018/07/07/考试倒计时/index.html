@@ -56,17 +56,28 @@ window.onload = function () {
         context.fillText( "物天考试倒计时",120,50);
         context.font = "15px Arial";
         context.fillText( "by 木一",420,60); 
-        context.fillStyle= "red";
         context.font = "25px Arial";
+        context.fillStyle= "black";
+
+        context.fillText( "     力学",col1,line);
+        context.beginPath();context.moveTo(col1-5, line-10);context.lineTo(col1+150, line-10);context.stroke();
+        line+=50;
+
+        context.fillText( "   高等数学",col1,line);
+        context.beginPath();context.moveTo(col1-5, line-10);context.lineTo(col1+150, line-10);context.stroke();
+        line+=50;
 
         context.fillText( "近代史纲要",col1,line);
-        context.fillText( leftTimer(2018,7,14,9,30,0,0),col2,line);
-        context.fillStyle= "black";
+        //context.fillText( leftTimer(2018,7,14,9,30,0,0),col2,line);
         context.fillText( "C207(1-25) ; C303(rest)",col3,line);
+        context.beginPath();context.moveTo(col1-5, line-10);context.lineTo(col3+300, line-10);context.stroke();
         line+=50;
-        context.fillStyle= "black";
+
+        context.fillStyle= "red";
         context.fillText( "  大学英语",col1,line);
         context.fillText( leftTimer(2018,7,16,9,30,0,0),col2,line);
+        context.fillStyle= "black";
+
         context.fillText( "E301(A) ; F201(B) ; F301(C)",col3,line);
         line+=50;
         context.fillText( "     凉学",col1,line);
@@ -74,7 +85,7 @@ window.onload = function () {
         context.fillText( "D307",col3,line);
         line+=50;
         context.fillText( "  误差分析",col1,line);
-        context.fillText( leftTimer(2018,7,17,3,00,0,0),col2,line);
+        context.fillText( leftTimer(2018,7,17,14,30,0,0),col2,line);
         context.fillText( "C303",col3,line);
         line = 150;
         context.restore();
