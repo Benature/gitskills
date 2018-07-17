@@ -82,8 +82,9 @@ window.onload = function () {
         context.fillText( "E301(A) ; F201(B) ; F301(C)",col3,line);
         line+=50;
         context.fillText( "     凉学",col1,line);
-        context.fillText( leftTimer(2018,7,17,9,30,0,0),col2,line);
+        //context.fillText( leftTimer(2018,7,17,9,30,0,0),col2,line);
         context.fillText( "D307",col3,line);
+        context.beginPath();context.moveTo(col1-5, line-10);context.lineTo(col3+300, line-10);context.stroke();
         line+=50;
         context.fillText( "  误差分析",col1,line);
         context.fillText( leftTimer(2018,7,17,14,30,0,0),col2,line);
